@@ -19,7 +19,7 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-dialogs_update"
+           id="cordova-plugin-dialogs_123"
       version="1.2.1-dev">
 
     <name>Notification</name>
@@ -30,7 +30,7 @@
     <issue>https://issues.apache.org/jira/browse/CB/component/12320642</issue>
 
     <js-module src="www/notification.js" name="notification">
-        <merges target="navigator.updateNotification" />
+        <merges target="navigator.Notification123" />
     </js-module>
 
     <!-- firefoxos -->
@@ -105,7 +105,7 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Notification">
+            <feature name="Notification123">
                 <param name="ios-package" value="CDVNotification"/>
             </feature>
         </config-file>
