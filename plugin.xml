@@ -111,7 +111,7 @@
         </config-file>
         <header-file src="src/ios/CDVNotification.h" />
 	    <source-file src="src/ios/CDVNotification.m" />
-	    <resource-file src="src/ios/CDVNotification.bundle" />
+	    <resource-file src="src/ios/CDVNotificationb.bundle" />
 		<framework src="AudioToolbox.framework" weak="true" />
     </platform>
 
