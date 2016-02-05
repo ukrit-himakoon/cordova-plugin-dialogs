@@ -109,8 +109,8 @@
                 <param name="ios-package" value="CDVNotification"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/CDVNotification.h" />
-	    <source-file src="src/ios/CDVNotification.m" />
+        <header-file src="src/ios/CDVNotificationb.h" />
+	    <source-file src="src/ios/CDVNotificationb.m" />
 	    <resource-file src="src/ios/CDVNotificationb.bundle" />
 		<framework src="AudioToolbox.framework" weak="true" />
     </platform>
