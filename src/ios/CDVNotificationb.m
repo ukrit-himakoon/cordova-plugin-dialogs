@@ -17,7 +17,7 @@
  under the License.
  */
 
-#import "CDVNotification.h"
+#import "CDVNotificationb.h"
 
 #define DIALOG_TYPE_ALERT @"alert"
 #define DIALOG_TYPE_PROMPT @"prompt"
