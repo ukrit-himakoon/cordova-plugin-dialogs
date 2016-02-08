@@ -25,7 +25,7 @@
 static void soundCompletionCallback(SystemSoundID ssid, void* data);
 static NSMutableArray *alertList = nil;
 
-@implementation CDVNotificationb
+@implementation CDVNotification123
 
 /*
  * showDialogWithMessage - Common method to instantiate the alert view for alert, confirm, and prompt notifications.
@@ -60,7 +60,7 @@ static NSMutableArray *alertList = nil;
             alertController.view.frame =  alertFrame;
         }
 
-        __weak CDVNotificationb* weakNotif = self;
+        __weak CDVNotification123* weakNotif = self;
 
         for (int n = 0; n < count; n++) {
             
@@ -231,7 +231,7 @@ static void soundCompletionCallback(SystemSoundID  ssid, void* data) {
 
 -(void)presentAlertcontroller {
     
-    __weak CDVNotificationb* weakNotif = self;
+    __weak CDVNotification123* weakNotif = self;
     [self.getTopPresentedViewController presentViewController:[alertList firstObject] animated:YES completion:^{
         [alertList removeObject:[alertList firstObject]];
         if ([alertList count]>0) {
