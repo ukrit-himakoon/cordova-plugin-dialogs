@@ -25,7 +25,7 @@
 static void soundCompletionCallback(SystemSoundID ssid, void* data);
 static NSMutableArray *alertList = nil;
 
-@implementation CDVNotification
+@implementation CDVNotificationb
 
 /*
  * showDialogWithMessage - Common method to instantiate the alert view for alert, confirm, and prompt notifications.
@@ -60,7 +60,7 @@ static NSMutableArray *alertList = nil;
             alertController.view.frame =  alertFrame;
         }
 
-        __weak CDVNotification* weakNotif = self;
+        __weak CDVNotificationb* weakNotif = self;
 
         for (int n = 0; n < count; n++) {
             
@@ -195,7 +195,7 @@ static NSMutableArray *alertList = nil;
 static void playBeep(int count) {
     SystemSoundID completeSound;
     NSInteger cbDataCount = count;
-    NSURL* audioPath = [[NSBundle mainBundle] URLForResource:@"CDVNotification.bundle/beep" withExtension:@"wav"];
+    NSURL* audioPath = [[NSBundle mainBundle] URLForResource:@"CDVNotificationb.bundle/beep" withExtension:@"wav"];
     #if __has_feature(objc_arc)
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)audioPath, &completeSound);
     #else
@@ -231,7 +231,7 @@ static void soundCompletionCallback(SystemSoundID  ssid, void* data) {
 
 -(void)presentAlertcontroller {
     
-    __weak CDVNotification* weakNotif = self;
+    __weak CDVNotificationb* weakNotif = self;
     [self.getTopPresentedViewController presentViewController:[alertList firstObject] animated:YES completion:^{
         [alertList removeObject:[alertList firstObject]];
         if ([alertList count]>0) {
