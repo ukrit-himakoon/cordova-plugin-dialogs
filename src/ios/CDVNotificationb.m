@@ -109,7 +109,7 @@ static NSMutableArray *alertList = nil;
     {
 #endif
 
-        CDVAlertView* alertView = [[CDVAlertView alloc]
+        CDVAlertView123* alertView = [[CDVAlertView123 alloc]
                                    initWithTitle:title
                                    message:message
                                    delegate:self
@@ -173,7 +173,7 @@ static NSMutableArray *alertList = nil;
   */
 - (void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    CDVAlertView* cdvAlertView = (CDVAlertView*)alertView;
+    CDVAlertView123* cdvAlertView = (CDVAlertView123*)alertView;
     CDVPluginResult* result;
 
     // Determine what gets returned to JS based on the alert view type.
@@ -243,7 +243,7 @@ static void soundCompletionCallback(SystemSoundID  ssid, void* data) {
 
 @end
 
-@implementation CDVAlertView
+@implementation CDVAlertView123
 
 @synthesize callbackId;
 
